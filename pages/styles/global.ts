@@ -1,17 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
+interface GlobalStyleProps {
+  darkMode: boolean;
+}
 
-export const MyGlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
   *{
     padding: 0;
     margin: 0;
     font-size: 16px;
-  }
-
-  body {
-    background: ${props => props.theme.colors.rainbow};
-    font-family: 'Roboto', sans-serif;
   }
 
   .active{

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Container } from "./styles/header";
 import { ToggleSwitch } from "./component/Switch";
+import { DarkModeContext } from './context/DarkModeContext';
 
 function Header() {
+  const { darkMode } = useContext(DarkModeContext);
+  
   return (
-  <Container>
+  <Container darkMode={darkMode}>
     <h1>Periodic Table</h1>
     <div>
       <span>☀️</span>

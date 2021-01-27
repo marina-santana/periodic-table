@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  darkMode: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
   padding: 20px;
-  color: ${props => props.theme.colors.pink};
+  color: ${props => props.darkMode? props.theme.colors.malibu :  props.theme.colors.pink};
   display: flex;
   justify-content: center;
   align-items: center;

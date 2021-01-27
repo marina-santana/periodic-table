@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 90vw;
-  margin: 20px 40px 40px;
+  padding: 20px 40px 40px;
   overflow-x: scroll; 
   display: flex;
   flex-direction: column;
