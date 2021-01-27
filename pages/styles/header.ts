@@ -10,7 +10,6 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 
   h1{
     font-size: 3rem;
@@ -26,5 +25,20 @@ export const Container = styled.div<ContainerProps>`
   div > span{
     font-size: 1.8rem;
     margin: 0 10px;
+  }
+
+  @media (max-width: 650px){
+    flex-direction: column;
+
+    h1{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    > div{
+      position: inherit;
+      align-self: flex-end;
+      margin-top: 20px;
+    }
   }
 `;

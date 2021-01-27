@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 90vw;
-  padding: 20px 40px 40px;
+  padding: 20px 0;
   overflow-x: scroll; 
   display: flex;
   flex-direction: column;
@@ -13,7 +13,9 @@ export const Container = styled.div`
     width: 0px;
   }
 
- 
+  @media (max-width: 650px){
+    width: 80vw;
+  }
 `;
 
 export const WrapperColumn = styled.div`

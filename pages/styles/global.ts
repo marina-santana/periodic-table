@@ -11,11 +11,4 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     margin: 0;
     font-size: 16px;
   }
-
-  .active{
-    background: rgba(255,255,255,0.3);
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-    transform: scale(1);
-  }
 `;
