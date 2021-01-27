@@ -17,11 +17,14 @@ export const Container = styled.div<ContainerProps>`
   justify-content: center;
 
   p{
-    /* font-weight: bold; */
     font-size: 1.5rem;
   }
 
   span{
     margin: 5px 0;
+    max-width: 80%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
   }
 `;
