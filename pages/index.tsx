@@ -1,13 +1,13 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle } from './styles/global'
+import GlobalStyle from './styles/global'
 import theme from './styles/theme'
 import Head from 'next/head'
-import ContextDarkMode from "./context/darkModeContext";
 import Page from './Page'
-import ContextModal from './context/modalContext'
+import ModalProvider from './context/modalContext'
+import DarkModeProvider from './context/darkModeContext'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
         <GlobalStyle/>
@@ -15,13 +15,15 @@ export default function Home() {
           <title>Periodic Table</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
-          <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
         </Head>
-      <ContextDarkMode>
-      <ContextModal>
-        <Page/>
-        </ContextModal>
-      </ContextDarkMode>
+      <DarkModeProvider>
+        <ModalProvider>
+          <Page/>
+        </ModalProvider>
+      </DarkModeProvider>
     </ThemeProvider>
   )
 }
+
+export default Home;

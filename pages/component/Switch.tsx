@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { DarkModeContext } from '../context/darkModeContext';
-import { Switch } from "../styles/switch";
+import Switch from "../styles/switch";
 
-export const ToggleSwitch: React.FC = () => {
+const ToggleSwitch: React.FC = () => {
   const { toggleDarkMode } = useContext(DarkModeContext);
 
   return(
@@ -14,3 +14,5 @@ export const ToggleSwitch: React.FC = () => {
     </Switch>
   )
 };
+
+export default ToggleSwitch;

@@ -1,4 +1,4 @@
-function MyApp({ Component, pageProps }) {
+const MyApp: React.FC = ({ Component, pageProps }) =>  {
   return <Component {...pageProps} />
 }
 

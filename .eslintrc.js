@@ -24,7 +24,9 @@ module.exports = {
         "prettier/prettier": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "typescript-eslint/explicit-module-boundary-types": "off"
     },
     "settings": {
         "import/resolver": {

@@ -1,6 +1,6 @@
   
 import React, { useContext } from 'react';
-import { Container } from './styles/elementDetails';
+import  Container from './styles/elementDetails';
 import { ModalContext } from './context/modalContext';
 import { DarkModeContext } from './context/darkModeContext';
 

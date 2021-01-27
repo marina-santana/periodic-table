@@ -1,14 +1,13 @@
-import React, { createContext, ReactChild, ReactChildren } from "react";
+import React, { createContext, ReactNode, ReactPortal } from "react";
 import useModal from "../hooks/useModal";
 
-interface Props {
-    children: ReactChild | ReactChildren;
+interface ModalProviderProps {
+  children: ReactPortal | ReactNode;
 }
    
-export const ModalContext = createContext<any>({});
+export const ModalContext = createContext({});
 
-const ModalProvider = ({ children }: Props) => {
-
+const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
   const { handleModal, isShowing } = useModal();
 
   return (

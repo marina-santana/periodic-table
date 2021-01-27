@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
+import React, { ReactChildren, ReactNode, useContext } from "react";
 import ReactDOM from "react-dom";
 import { ModalContext } from "../context/modalContext";
-import { ModalContainer } from "../styles/modal";
+import Container from "../styles/modal";
 
 interface ModalContextProps {
-  children: any;
+  children: ReactChildren | ReactNode;
 }
 
 const Modal: React.FC<ModalContextProps> = ({children}) => {
   const { isShowing } = useContext(ModalContext); 
 
-  return isShowing ? ReactDOM.createPortal(<ModalContainer>{children}</ModalContainer>, document.body) : null;
+  return isShowing ? ReactDOM.createPortal(<Container>{children}</Container>, document.body) : null;
 };
 
 export default Modal;

@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Container } from "./styles/header";
-import { ToggleSwitch } from "./component/Switch";
+import React, { useContext } from 'react'
+import Container from "./styles/header";
+import ToggleSwitch from "./component/Switch";
 import { DarkModeContext } from './context/darkModeContext';
 
-function Header() {
+const Header: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
   
   return (

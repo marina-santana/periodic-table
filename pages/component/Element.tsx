@@ -1,12 +1,12 @@
 import React from 'react'
-import { Container } from "../styles/element";
+import Container from "../styles/element";
 
 interface ElementProps {
   number?: string;
   symbol?: string;
   name?: string;
   backgroundColor: string;
-  onClick?: () => {},
+  onClick?: () => void;
 }
 
 const Element : React.FC<ElementProps> = ({number, symbol, name, backgroundColor, onClick}) => {
