@@ -24,16 +24,7 @@ module.exports = {
         "prettier/prettier": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-        "import/prefer-default-export": "off",
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-            "ts": "never",
-            "tsx": "never"
-            }
-        ]
+        "import/prefer-default-export": "off"
     },
     "settings": {
         "import/resolver": {

@@ -1,10 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import Element from './component/Element';
+import { ModalContext } from './context/modalContext';
 import { Container, Column, WrapperColumn, Row, WrapperRow } from "./styles/table";
 import theme from './styles/theme';
 
 function Table() {
   const containerRef = useRef<HTMLHeadingElement>();
+  const { handleModal } = useContext(ModalContext);
   const { colors } = theme;
 
   let isDown = false;
@@ -46,7 +48,7 @@ function Table() {
     onMouseMove={handleMouseMove}>
     <WrapperColumn>
       <Column>
-        <Element number="1" symbol="H" name="Hydrogen" backgroundColor={colors.yellow}/>
+        <Element number="1" symbol="H" name="Hydrogen" backgroundColor={colors.yellow} onClick={() => handleModal('open', 'first-modal')}/>
         <Element number="3" symbol="Li" name="Lithium" backgroundColor={colors.red}/>
         <Element number="11" symbol="Na" name="Sodium" backgroundColor={colors.red}/>
         <Element number="19" symbol="K" name="Potassium" backgroundColor={colors.red}/>

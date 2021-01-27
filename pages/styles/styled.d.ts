@@ -5,7 +5,7 @@ declare module 'styled-components' {
     borderRadius: string;
     colors: {
       rainbow: string;
-      darkGrey: string;
+      grey: string;
       white: string;
       red: string;
       yellow: string;
@@ -19,6 +19,7 @@ declare module 'styled-components' {
       malibu: string;
       mineShaft: string;
       blue: string;
+      bgModal: string;
     }
   }
 }

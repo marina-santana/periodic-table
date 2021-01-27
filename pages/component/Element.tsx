@@ -6,11 +6,12 @@ interface ElementProps {
   symbol?: string;
   name?: string;
   backgroundColor: string;
+  onClick?: () => {},
 }
 
-const Element : React.FC<ElementProps> = ({number, symbol, name, backgroundColor}) => {
+const Element : React.FC<ElementProps> = ({number, symbol, name, backgroundColor, onClick}) => {
   return (
-  <Container backgroundColor={backgroundColor}>
+  <Container backgroundColor={backgroundColor} onClick={onClick}>
    {number && <span>{number}</span>}
    {symbol && <p>{symbol}</p>}
    {name && <span>{name}</span>}    

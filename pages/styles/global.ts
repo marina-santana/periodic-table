@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-interface GlobalStyleProps {
-  darkMode: boolean;
-}
 
-export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
+export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
   *{

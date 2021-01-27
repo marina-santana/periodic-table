@@ -6,7 +6,7 @@ export const DarkModeContext = createContext({
     toggleDarkMode: () => {},
 });
 
-export default props => {
+export default ({children}: any) => {
   const [darkMode, setDarkMode] = useState(false);
  
   function toggleDarkMode() {
@@ -14,7 +14,7 @@ export default props => {
   }
   return (
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
-        {props.children}
+        {children}
     </DarkModeContext.Provider>
   );
 };

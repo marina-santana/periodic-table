@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Container } from "./styles/header";
 import { ToggleSwitch } from "./component/Switch";
-import { DarkModeContext } from './context/DarkModeContext';
+import { DarkModeContext } from './context/darkModeContext';
 
 function Header() {
   const { darkMode } = useContext(DarkModeContext);
