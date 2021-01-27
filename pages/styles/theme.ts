@@ -16,7 +16,8 @@ const theme: DefaultTheme = {
     shamrock: '#48E499',
     mirage: '#202040',
     malibu: '#8585FF',
-    mineShaft: '#252525'
+    mineShaft: '#252525',
+    blue: '#4886E4'
   },
 };
 

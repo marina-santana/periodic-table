@@ -5,6 +5,7 @@ import { MyGlobalStyle } from './styles/global'
 import theme from './styles/theme'
 import Head from 'next/head'
 import Element from './component/Element'
+import Table from './Table'
 
 export default function Home() {
   return (
@@ -17,8 +18,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"/>
       </Head>
       <Header/>
-      <Element backgroundColor={theme.colors.yellow}/>
-
+      <Table/>
     </ThemeProvider>
   )
 }

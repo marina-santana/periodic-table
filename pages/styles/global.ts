@@ -13,4 +13,11 @@ export const MyGlobalStyle = createGlobalStyle`
     background: ${props => props.theme.colors.rainbow};
     font-family: 'Roboto', sans-serif;
   }
+
+  .active{
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
 `;
