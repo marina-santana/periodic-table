@@ -11,5 +11,6 @@ export const MyGlobalStyle = createGlobalStyle`
 
   body {
     background: ${props => props.theme.colors.rainbow};
+    font-family: 'Roboto', sans-serif;
   }
 `;

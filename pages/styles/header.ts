@@ -9,7 +9,6 @@ export const Container = styled.div`
   position: relative;
 
   h1{
-    font-family: 'Roboto', sans-serif;
     font-size: 3rem;
   }
 
