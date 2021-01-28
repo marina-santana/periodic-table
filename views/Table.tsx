@@ -8,10 +8,14 @@ import Container, {
     WrapperRow,
 } from '../styles/table';
 import { theme } from '../styles/global';
+import { useRouter } from 'next/router';
+import { useContextualRouting } from 'next-use-contextual-routing';
 
 function Table() {
     const containerRef = useRef<HTMLHeadingElement>();
     const { handleModal } = useContext(ModalContext);
+    const router = useRouter();
+    const { makeContextualHref} = useContextualRouting();
     const { colors } = theme;
 
     let isDown = false;
@@ -44,6 +48,18 @@ function Table() {
         }
     };
 
+    const handleOpenModal = (symbol) => {        
+      router.push(
+          makeContextualHref({ id: `${symbol}` }),
+          `/${symbol}`,
+          {
+            shallow: true,
+          }
+        );
+
+      handleModal();
+    }
+
     return (
         <Container
             ref={containerRef}
@@ -59,7 +75,7 @@ function Table() {
                         symbol="H"
                         name="Hydrogen"
                         backgroundColor={colors.yellow}
-                        onClick={handleModal}
+                        onClick={() => handleOpenModal("H")}
                     />
                     <Element
                         number="3"
