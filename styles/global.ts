@@ -1,3 +1,5 @@
+import { createGlobalStyle } from 'styled-components';
+
 interface DefaultTheme {
     colors: {
         rainbow: string;
@@ -19,7 +21,7 @@ interface DefaultTheme {
     };
 }
 
-const theme: DefaultTheme = {
+export const theme: DefaultTheme = {
     colors: {
         rainbow:
             'linear-gradient(90deg, rgba(218, 73, 242, 0.25) 3%, rgba(218, 73, 242, 0.25) 3.01%, rgba(242, 73, 154, 0.25) 17.65%, rgba(242, 87, 73, 0.25) 31.29%, rgba(242, 134, 39, 0.25) 47.46%, rgba(242, 87, 73, 0.25) 64.64%, rgba(242, 73, 154, 0.25) 81.81%, rgba(218, 73, 242, 0.25) 100%)',
@@ -41,4 +43,12 @@ const theme: DefaultTheme = {
     },
 };
 
-export default theme;
+const GlobalStyle = createGlobalStyle`
+  *{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+`;
+
+export default GlobalStyle;

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "H",
+    "name": "Hydrogen",
+    "number": "1",
+    "type": "Nonmetal",
+    "standardState": "Gas",
+    "atomicMass": "1.0080 u",
+    "electronConfiguration": "1s¹",
+    "oxidationStates":	"+1, -1",
+    "electronegativity":	"2.2",
+    "atomicRadius":	"120 pm",
+    "ionizationEnergy":	"13.598 eV",
+    "electronAffinity":	"0.754 eV",
+    "meltingPoint":	"13.81 K",
+    "boilingPoint":	"20.28 K",
+    "density":	"0.00008988 g/cm³",
+    "yearDiscovered":	"1766"
+  },
+  {
+    "id": "ki",
+    "name": "teste 2"
+  }
+]

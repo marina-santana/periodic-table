@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import Header from './Header'
-import { DarkModeContext } from "./context/darkModeContext";
+import { DarkModeContext } from "../context/darkModeContext";
 import Table from './Table'
-import Container from './styles/page'
-import Modal from './component/Modal';
-import  ElementDetails from './ElementDetails';
+import Container from '../styles/page'
+import Modal from '../component/Modal';
+import ElementDetails from './ElementDetails';
 
-const Page : React.FC = () => {
+function Page() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
@@ -18,6 +18,6 @@ const Page : React.FC = () => {
         </Modal>
       </Container>
   )
-}
+};
 
 export default Page;
