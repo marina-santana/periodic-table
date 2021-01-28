@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Periodic table
+
+Periodic table build with next js and styled-components
+
+![Periodic Table](https://user-images.githubusercontent.com/47863089/106213272-15531380-61ab-11eb-8bc3-02934d5f27ca.gif)
 
 ## Getting Started
 
