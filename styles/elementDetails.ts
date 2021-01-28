@@ -24,7 +24,10 @@ const Container = styled.div<PortalProps>`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: yellow;
+        background-color: ${props =>
+            props.darkMode
+                ? props.theme.colors.white
+                : props.theme.colors.pink};
         width: 100%;
         border-radius: 10px 10px 0 0;
         padding: 20px 0;

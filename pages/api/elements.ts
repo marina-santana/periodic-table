@@ -5,7 +5,7 @@ export default (req: NextApiRequest, res: NextApiResponse): void => {
     try {
         const { id } = req.query;
 
-        const element = dataBase.find(element => element.id === id);
+        const element = dataBase.find(element => element.id == id);
 
         if (element) {
             res.status(200).json(element);

@@ -6,9 +6,9 @@ import { useRouter } from 'next/router';
 import { useContextualRouting } from 'next-use-contextual-routing';
 
 interface DataProps {
-  id: string;
+  id: number;
   name: string;
-  number: string;
+  symbol: string;
   type: string;
   standardState: string;
   atomicMass: string;
@@ -58,8 +58,8 @@ function ElementDetails() {
         <Container darkMode={darkMode}>
             <div>
                 <sub onClick={handleCloseModal}>&#10006;</sub>
-                <span>{checkIfDataIsLoading(data?.number)}</span>
-                <p>{checkIfDataIsLoading(data?.id)}</p>
+                <span>{checkIfDataIsLoading(data?.id)}</span>
+                <p>{checkIfDataIsLoading(data?.symbol)}</p>
                 <b>{checkIfDataIsLoading(data?.name)}</b>
                 <span>{checkIfDataIsLoading(data?.type)}</span>
             </div>
