@@ -1,12 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyle, {theme} from '../styles/global';
+import GlobalStyle, { theme } from '../styles/global';
 import Head from 'next/head';
 import Page from '../views/Page';
 import ModalProvider from '../context/modalContext';
 import DarkModeProvider from '../context/darkModeContext';
 
-function Home() {  
+function Home() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -29,6 +29,6 @@ function Home() {
             </DarkModeProvider>
         </ThemeProvider>
     );
-};
+}
 
 export default Home;
